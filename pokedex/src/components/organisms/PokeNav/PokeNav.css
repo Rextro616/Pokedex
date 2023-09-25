@@ -1,0 +1,94 @@
+@media (min-width: 900px) {
+  .pokeNav {
+    display: flex;
+    width: 100%;
+    height: 8vh;
+  }
+
+  .nav-left {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    background-color: #5b7ff1;
+  }
+
+  .nav-left .pokeTitle {
+    width: 60%;
+    margin: 0.5%;
+    border-radius: 100px;
+    -webkit-box-shadow: 1px 5px 11px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 1px 5px 11px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 5px 11px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  .nav-left .pokeTitle .pokeParagraph {
+    color: white;
+    font-size: 60px;
+    -webkit-text-stroke: 2px #43666f;
+  }
+
+  .nav-right {
+    display: flex;
+    width: 30%;
+    background-color: #72a3f0;
+    justify-content: center;
+  }
+
+  .nav-right .pokeTitle {
+    width: 70%;
+    height: 60%;
+  }
+
+  .nav-right .pokeTitle .pokeParagraph {
+    color: white;
+    font-size: 32px;
+  }
+
+  .nav-left .pokedex-complete .pokeTitle .pokeParagraph{
+    width: 40%;
+    font-size: 30px;
+    -webkit-text-stroke: 0px #43666f;
+  }
+
+}
+
+@media (max-width: 899px) {
+  .pokeNav {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+  }
+
+  .nav-left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #5b7ff1;
+  }
+
+  .nav-left .pokeTitle {
+    width: 100%;
+    margin: 0.5%;
+    border-radius: 100px;
+    -webkit-box-shadow: 1px 5px 11px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 1px 5px 11px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 5px 11px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  .nav-left .pokeTitle .pokeParagraph {
+    color: white;
+    font-size: 30px;
+    -webkit-text-stroke: 2px #43666f;
+  }
+
+  .nav-right {
+    width: 0%;
+    visibility: hidden;
+  }
+
+  .nav-left .pokedex-complete{
+    width: 0%;
+    visibility: hidden;
+    margin: 0%;
+  }
+}

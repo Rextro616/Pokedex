@@ -1,10 +1,10 @@
 import './PokeTitle.css'
 
-function PokeTitle() {
-
+function PokeTitle({children, justify , color} : any) {
   return (
     <>
-      <div className='pokeTitle'>
+      <div className='pokeTitle' style={{backgroundColor: color, justifyContent: justify}}>
+        {children}
       </div>
     </>
   )

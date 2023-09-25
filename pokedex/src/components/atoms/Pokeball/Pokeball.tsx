@@ -1,11 +1,11 @@
 import './Pokeball.css'
 
-function Pokeball() {
+function Pokeball(prop: { img: string | undefined }) {
 
   return (
     <>
-      <div className='pokeball'>
-      </div>
+      <img src={prop.img} alt='pokeball' className='pokeball'>
+      </img>
     </>
   )
 }

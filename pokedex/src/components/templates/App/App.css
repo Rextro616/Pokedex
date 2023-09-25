@@ -1,5 +1,29 @@
-:root{
-    background: rgb(85,109,183);
-    background: linear-gradient(0deg, rgba(85,109,183,1) 0%, rgba(128,157,214,1) 100%);
-    height: 100vh;
+@media (min-width: 900px) {
+  .app {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1.3fr;
+    align-items: center;
+  }
+  .app-row .squareImg {
+    height: 70vh;
+    width: 70vh;
+  }
+}
+
+@media (max-width: 899px) {
+  .app-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .app-row .pokemonCard{
+    width: 90%;
+  }
+
+  .app-row .leftImg{
+    width: 0%;
+    height: 0%;
+  }
 }

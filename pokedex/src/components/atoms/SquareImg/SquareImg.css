@@ -1,16 +1,20 @@
 .squareImg{
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 30px;
     border: 15px solid #EBD460;
     height: 50vh;
     background-color: #CEE0EB;
     background-image: linear-gradient(0deg, #e5e5f7 50%, #a8c4de 50%);
     background-size: 35px 35px;
-    width: 50%;
+    width: 50vh;
+    object-fit: contain;
 }
 
-.squareImg .img{
+.squareImg img{
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
