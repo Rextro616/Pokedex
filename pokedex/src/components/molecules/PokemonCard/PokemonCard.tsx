@@ -7,7 +7,7 @@ function PokemonCard(props: { color: string | undefined, nombre: string | undefi
 
   return (
     <>
-      <div className='pokemonCard' style={{backgroundColor: props.color}}>
+      <div id={props.num} className='pokemonCard' style={{backgroundColor: props.color}}>
         <Pokeball img={Img} />
         <PokeParagraph text={props.num}/>
         <PokeParagraph text={props.nombre}/>

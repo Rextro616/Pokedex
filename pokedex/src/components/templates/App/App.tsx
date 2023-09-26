@@ -1,11 +1,17 @@
 import './App.css'
 import SquareImg from '../../atoms/SquareImg/SquareImg'
-import PokemonCard from '../../molecules/PokemonCard/PokemonCard'
 import PokeNav from '../../organisms/PokeNav/PokeNav'
 import LeftImg from '../../atoms/LeftImg/LeftImg'
+import PokeList from '../../organisms/PokeList/PokeList'
+import { useState } from 'react'
+import axios from 'axios'
 
 
 function App() {
+
+ 
+
+
   return (
     <>
       <header>
@@ -29,9 +35,9 @@ function App() {
         <div className='app-row'>
           <SquareImg img="https://www.pngmart.com/files/12/Charizard-PNG-Free-Download.png" />
         </div>
-
+          
         <div className='app-row'>
-          <PokemonCard color='#EEDEAB' num={'N. ° ' + 2} nombre='card'/>
+          <PokeList pokemon={pokemon} />
         </div>
 
       </main>
