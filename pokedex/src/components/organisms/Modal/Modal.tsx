@@ -17,7 +17,7 @@ const OVERLAY_STYLES = {
 
 export default function Modal({ open, children, onClose, pokemon }) {
   console.log(pokemon);
-  if (!open) return true;
+  if (!open) return null;
 
   return (
     <div style={OVERLAY_STYLES}>
@@ -62,7 +62,7 @@ export default function Modal({ open, children, onClose, pokemon }) {
             </div>
           </div>
 
-          
+
         </div>
       </div>
     </div>
