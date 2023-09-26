@@ -1,3 +1,4 @@
+
 .styles{
     background-color: #92C8F6;
     width: 100%;
@@ -7,4 +8,51 @@
     display: grid;
     justify-content: center;
     border-radius: 15px;
+    grid-template-columns: 0.1fr 1fr;
+}
+
+.styles .pokemonCard{
+    border: #f1ece6 solid 4px;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E7DEBF;
+    height: 10vh;
+    border-radius: 3px;
+    font-size: 200%;
+}
+
+.caracteristics{
+    padding: 3px;
+    background-color: #C3E7F5;
+    height: 40vh;
+    display: grid;
+    align-items: center;
+    padding-left: 3%;
+    grid-template-columns: 0.1fr 1fr;
+}
+
+.circle{
+    border-radius: 100%;
+    background-color: #D9D9D9;
+    border: #E29BB8 solid 5px;
+    height: 18vh;
+    width: 18vh;
+}
+
+.tipos{
+    padding: 1%;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
 }

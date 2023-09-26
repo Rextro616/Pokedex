@@ -1,0 +1,10 @@
+.stats{
+    display: flex;
+    height: 8vh;
+    width: 20vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
