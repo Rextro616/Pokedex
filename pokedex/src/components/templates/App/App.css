@@ -18,7 +18,7 @@
     width: 100%;
   }
 
-  .app-row .pokemonCard{
+  .app-row .pokeList{
     width: 90%;
   }
 
@@ -26,4 +26,8 @@
     width: 0%;
     height: 0%;
   }
+}
+
+.app-row .pokeList{
+  height: 30vh;
 }

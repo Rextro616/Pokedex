@@ -3,13 +3,33 @@ import SquareImg from '../../atoms/SquareImg/SquareImg'
 import PokeNav from '../../organisms/PokeNav/PokeNav'
 import LeftImg from '../../atoms/LeftImg/LeftImg'
 import PokeList from '../../organisms/PokeList/PokeList'
-import { useState } from 'react'
-import axios from 'axios'
+import { useState, useEffect } from 'react'
 
 
 function App() {
 
- 
+  const [allPokemons, setAllPokemons] = useState([]);
+
+  const getPokemons = async() => {
+    const baseURL = "https://pokeapi.co/api/v2/pokemon?limit=151&offset=0"
+
+    const res = await fetch(`${baseURL}`);
+    const data = await res.json();
+
+    const promise = data.results.map(async(pokemon: { url: RequestInfo | URL }) => {
+      const res = await fetch(pokemon.url);
+      const data = await res.json();
+      return data;
+    })
+
+    const results = await Promise.all(promise);
+
+    setAllPokemons(results);
+  } 
+
+  useEffect(() => {
+    getPokemons()
+  }, [])
 
 
   return (
@@ -37,7 +57,7 @@ function App() {
         </div>
           
         <div className='app-row'>
-          <PokeList pokemon={pokemon} />
+          <PokeList pokemon={allPokemons} />
         </div>
 
       </main>
